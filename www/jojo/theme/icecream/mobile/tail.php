@@ -19,15 +19,16 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     </div>
     <button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
     <button type="button" id="top_btn_1"><a href="https://www.kakaocorp.com/service/KakaoTalk" target="_blank"><i class="far fa-comment-dots"></i></a></button>
+
     <div id="top_btn2">
 
-  <div id="top_btn2_1"><a href="https://www.facebook.com/Musicusbooth/%22" target="_blank" </a><img src="/www/jojo/img/"</div>
+    <div id="top_btn2_1"><a href="https://www.facebook.com/Musicusbooth/%22" target="_blank" </a><img src="/www/jojo/img/blog_naver.png"</div>
 
-  <div id="top_btn2_1"><a href="https://www.facebook.com/Musicusbooth/%22" target="_blank" </a><img src="/www/jojo/img/" </div>
+    <div id="top_btn2_1"><a href="https://www.facebook.com/Musicusbooth/%22" target="_blank" </a><img src="/www/jojo/img/facebook" </div>
 
-  <div id="top_btn2_1"><a href="https://www.facebook.com/Musicusbooth/%22" target="_blank" </a><img src="/www/jojo/img/" </div>
-    
-    </div>
+    <div id="top_btn2_1"><a href="https://www.facebook.com/Musicusbooth/%22" target="_blank" </a><img src="/www/jojo/img/instagram.png" </div>
+
+      </div>
 
     <?php
     if(G5_DEVICE_BUTTON_DISPLAY && G5_IS_MOBILE) { ?>
