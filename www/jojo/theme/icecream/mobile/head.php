@@ -22,10 +22,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
     }
     ?>
-    
+
     <div id="hd_wrapper">
         <div id="logo">
-            <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/logo.svg" alt="<?php echo $config['cf_title']; ?>"></a>
+            <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/blocksoundlogo.svg" alt="<?php echo $config['cf_title']; ?>"></a>
         </div>
         <div id="tnb">
             <ul>
@@ -45,9 +45,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 				</li>
 
             </ul>
-      
+
         </div>
-        
+
 <!--
         <ul id="hd_qnb">
             <li><a href="<?php echo G5_BBS_URL ?>/faq.php"><i class="fa fa-question" aria-hidden="true"></i><span>FAQ</span></a></li>
@@ -57,20 +57,20 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         </ul>
 -->
     </div>
-    
+
     <nav id="gnb">
         <h2>메인메뉴</h2>
         <button type="button" class="gnb_menu_btn gnb_btn"><i class="fas fa-step-forward fa-flip-horizontal"></i><span class="sound_only">전체메뉴열기</span></button>
-		
-		
-		
-		
-		
-		
-       
+
+
+
+
+
+
+
         <div class="gnb_wrap">
             <ul id="gnb_1dul">
-                
+
                 <?php
 				$menu_datas = get_menu_db(1, true);
 				$i = 0;
@@ -83,7 +83,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     $k = 0;
                     foreach( (array) $row['sub'] as $row2 ){
 
-                        if( empty($row2) ) continue; 
+                        if( empty($row2) ) continue;
 
                         if($k == 0)
                             echo '<span class="bg">하위분류</span><ul class="gnb_2dul">'.PHP_EOL;
@@ -125,7 +125,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
                 <ul class="gnb_al_ul">
                     <?php
-                    
+
                     $i = 0;
                     foreach( $menu_datas as $row ){
                     ?>
@@ -155,7 +155,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     <?php } ?>
                 </ul>
 
-              
+
                 <ul class="gnb_al_ul gnb_al_qk">
                     <li><a href="<?php echo G5_BBS_URL ?>/faq.php"><i class="fa fa-question" aria-hidden="true"></i><span>FAQ</span></a></li>
                     <li><a href="<?php echo G5_BBS_URL ?>/qalist.php"><i class="fa fa-comments" aria-hidden="true"></i><span>1:1문의</span></a></li>
@@ -165,7 +165,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <button type="button" class="gnb_close_btn"><i class="fa fa-times" aria-hidden="true"></i></button>
             </div>
         </div>
-             
+
         <div class="hd_sch_wr">
             <fieldset id="hd_sch" >
                 <legend>사이트 내 전체검색</legend>
@@ -206,14 +206,14 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 </script>
 
             </fieldset>
-                
+
             <button type="button" class="btn_sch_close"><i class="fa fa-times"></i></button>
         </div>
     </nav>
 
-   
+
     <script>
-    
+
     $(function(){
         $(".gnb_menu_btn").click(function(){
             $("#gnb_all").show();
@@ -243,9 +243,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <div id="wrapper" >
 
-    
 
-       
+
+
  <?php if (!defined("_INDEX_")) { //서브페이지에서만 노출되는에  ?>
 	<div id="container">
 	<h2 id="container_title" class="top" title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></h2><?php } ?>
