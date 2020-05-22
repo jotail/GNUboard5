@@ -16,19 +16,20 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <a href="<?php echo get_pretty_url('content', 'provision'); ?>">서비스이용약관</a>
         </div>
         Copyright &copy; <b>소유하신 도메인.</b> All rights reserved.<br>
+        <div id="top_btn2">
+          <div>
+            <div id="top_btn2_1"><a href="https://www.kakaocorp.com/service/KakaoTalk" target="_black"><img src="<?php echo G5_IMG_URL ?>/kakao.png" alt=""></a></div>
+            <div id="top_btn2_1"><a href="https://www.youtube.com/"  target="_black"><img src="<?php echo G5_IMG_URL ?>/youtube.png" alt=""></a></div>
+            <div id="top_btn2_1"><a href="https://www.instagram.com/" target="_black"><img src="<?php echo G5_IMG_URL ?>/insta.png" alt=""></a></div>
+          </div>
+
+
+        </div>
     </div>
     <button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
     <button type="button" id="top_btn_1"><a href="https://www.kakaocorp.com/service/KakaoTalk" target="_blank"><i class="far fa-comment-dots"></i></a></button>
 
-    <div id="top_btn2">
 
-    <div id="top_btn2_1"><a href="https://www.facebook.com/Musicusbooth/%22" target="_blank" </a><img src="/www/jojo/img/blog_naver.png"</div>
-
-    <div id="top_btn2_1"><a href="https://www.facebook.com/Musicusbooth/%22" target="_blank" </a><img src="/www/jojo/img/facebook" </div>
-
-    <div id="top_btn2_1"><a href="https://www.facebook.com/Musicusbooth/%22" target="_blank" </a><img src="/www/jojo/img/instagram.png" </div>
-
-      </div>
 
     <?php
     if(G5_DEVICE_BUTTON_DISPLAY && G5_IS_MOBILE) { ?>

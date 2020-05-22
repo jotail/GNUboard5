@@ -8,17 +8,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
 //출력배너너비
 $thumb_width = 1920;
 //출력배너 높이
-$thumb_height = 750;
+$thumb_height = 800;
 ?>
 <style>
 	.main_slider_baner{padding: 20px 0;	}
 	.swiper-slide img{width: 100%;}
-
-	@media screen and (max-width: 950px) {
-	  .swiper-slide img {padding:25px 0 0 0 ;   }
-
-	}
-
 </style>
 
 <div class="main_slider_baner">
@@ -49,8 +43,8 @@ $thumb_height = 750;
     <!-- 롤링점 -->
     <div class="swiper-pagination"></div>
 	  <!-- 좌우버튼 -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"><i class="xi-angle-right xi-3x"></i></div>
+    <div class="swiper-button-prev"><i class="xi-angle-left xi-3x"></i></div>
   </div>
 
   <!-- Swiper JS -->

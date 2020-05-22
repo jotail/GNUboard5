@@ -60,7 +60,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
     <nav id="gnb">
         <h2>메인메뉴</h2>
-        <button type="button" class="gnb_menu_btn gnb_btn"><i class="fas fa-step-forward fa-flip-horizontal"></i><span class="sound_only">전체메뉴열기</span></button>
+        <button type="button" class="gnb_menu_btn gnb_btn"><i class="xi-bars xi-1x"></i><span class="sound_only">전체메뉴열기</span></button>
 
 
 
@@ -215,12 +215,20 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     <script>
 
     $(function(){
+
         $(".gnb_menu_btn").click(function(){
+
+          if(!$(this).hasClass('act')){
+            $(this).addClass('act');
             $("#gnb_all").show();
-        });
-        $(".gnb_close_btn").click(function(){
+            $('.xi-bars').addClass('xi-close');
+          }else{
+            $(this).removeClass('act');
             $("#gnb_all").hide();
+            $('.xi-bars').removeClass('xi-close');
+          }
         });
+
 
         $(".gnb_sch_btn").click(function(){
             $(".hd_sch_wr").show();
